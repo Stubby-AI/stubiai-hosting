@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group Buy Hive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  
+  
+  <!-- Navbar -->
+<nav>
+    <div class="logo" id="logoimg"><a href="#hero">GroupBuyHive</a></div>
+
+    <!-- Menu Toggle Button -->
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-links" id="nav-menu">
+        <li ><a href="#hero">Home</a></li>
+        <li ><a href="#account">Buy In Bulk</a></li>
+        <li ><a href="#vendor">Sell In Bulk</a></li>
+        <li ><a href="#footer">Contact Us</a></li>
+    
+        <!-- Desktop Buttons -->
+       
+
+        <!-- Mobile Buttons -->
+        <li class="mobile-buttons">
+           <a class="shop-btn" href="#" onclick="openSignup()">Shop Now</a>
+
+
+            <a class="vendor-btn" href="https://calendar.app.google/XHTG4JFheYZA5wYN9" target="_blank">Vendor Demo</a>
+            <a class="login-btn" id="userIcon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+        fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+        <path d="M8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664 0 1 1 1 1 1h10s1 0 1-1c-.002-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10z"/>
+    </svg>
+</a>
+<div id="waitlistModal" class="gbh-modal">
+  <div class="gbh-modal-content">
+    <span class="gbh-close">&times;</span>
+
+    <h2>User accounts coming soon !!!</h2>
+    <p>Join early to get exclusive benefits on GroupBuyHive.</p>
+
+    <input type="email" id="waitlistEmail"
+           placeholder="Enter your email" required>
+
+    <button id="joinWaitlistBtn">Join Waitlist</button>
+
+    <small>No spam. Early access only.</small>
+  </div>
+</div>
+
+        </li>
+    </ul>
+</nav>
+
+
+
+
+
+  
+  
+  
+   <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <h1>We provide<br><span id="highlight">Collective Buying </span>  <br>Power to Urban communities</h1> <br>
+      <p>Save More, Together — Bulk Buying Made Simple for Urban Communities</p><br>
+      <a href="#account" id="savebtn">Join us to Save in bulk</a>
+    </div>
+    <div class="hero-image">
+      <img src="Images/image1.png.png" alt="Bulk Shopping">
+    </div>
+  </section>
+
+
+
+
+
+<!-- Incubators Section -->
+<section class="incubators" id="incubators">
+  <h2>We are recognized by</h2>
+  <div class="incubators-slider">
+    <div class="incubators-track">
+      <!-- First set of 15 logos -->
+      <img src="Images/incubatorlogo1.jpg" alt="Incubator Partner 1">
+      <img src="Images/incubatorlogo2.jpg" alt="Incubator Partner 2">
+      <img src="Images/incubatorlogo3.jpg" alt="Incubator Partner 3">
+      <img src="Images/incubatorlogo4.jpg" alt="Incubator Partner 4">
+      <img src="Images/incubatorlogo5.PNG" alt="Incubator Partner 5">
+      <img src="Images/incubatorlogo6.jpg" alt="Incubator Partner 6">
+      <img src="Images/incubatorlogo7.jpg" alt="Incubator Partner 7">
+      <img src="Images/incubatorlogo8.PNG" alt="Incubator Partner 8">
+      <img src="Images/incubatorlogo9.PNG" alt="Incubator Partner 9">
+      <img src="Images/incubatorlogo10.JPG" alt="Incubator Partner 10">
+      <img src="Images/incubatorlogo11.jpg" alt="Incubator Partner 11">
+      <img src="Images/incubatorlogo12.PNG" alt="Incubator Partner 12">
+      <img src="Images/incubatorlogo13.JPG" alt="Incubator Partner 13">
+      <img src="Images/incubatorlogo14.PNG" alt="Incubator Partner 14">
+      <img src="Images/incubatorlogo15.PNG" alt="Incubator Partner 15">
+
+      <!-- Duplicate set for continuous scrolling -->
+      <img src="Images/incubatorlogo1.jpg" alt="Incubator Partner 1">
+      <img src="Images/incubatorlogo2.jpg" alt="Incubator Partner 2">
+      <img src="Images/incubatorlogo3.jpg" alt="Incubator Partner 3">
+      <img src="Images/incubatorlogo4.jpg" alt="Incubator Partner 4">
+      <img src="Images/incubatorlogo5.PNG" alt="Incubator Partner 5">
+      <img src="Images/incubatorlogo6.jpg" alt="Incubator Partner 6">
+      <img src="Images/incubatorlogo7.jpg" alt="Incubator Partner 7">
+      <img src="Images/incubatorlogo8.PNG" alt="Incubator Partner 8">
+      <img src="Images/incubatorlogo9.PNG" alt="Incubator Partner 9">
+      <img src="Images/incubatorlogo10.JPG" alt="Incubator Partner 10">
+      <img src="Images/incubatorlogo11.jpg" alt="Incubator Partner 11">
+      <img src="Images/incubatorlogo12.PNG" alt="Incubator Partner 12">
+      <img src="Images/incubatorlogo13.JPG" alt="Incubator Partner 13">
+      <img src="Images/incubatorlogo14.PNG" alt="Incubator Partner 14">
+      <img src="Images/incubatorlogo15.PNG" alt="Incubator Partner 15">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- Create Account Section -->
+  <section class="account" id="account">
+    <div class="account-text">
+      <h2 id="account-text">Create An Account</h2><br>
+      <p>Join Group Buy Hive and unlock the power of collective buying. Choose the account type that fits you best</p><br>
+      <div class="account-cards">
+        <div class="card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+  <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+</svg><br>
+          <h3>For Business<br> Customers</h3>
+          <p> Tailored for retailers, offices, and 
+organizations looking to buy in bulk.</p>
+          <ul>
+            <li>Source products directly from farmers, manufacturers, & distributors</li>
+            <li>Access competitive wholesale pricing with no middlemen</li>
+            <li>Manage bulk orders and deliveries with ease</li>
+            <li>Build long-term supplier relationships through the Hive</li>
+            <li>Possibility to sell your products in our platform to communities  too!</li>
+          </ul>
+          <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfYl5-ZPsGUEfaqDw4xNEDAcGcWaDA705g7crsfXGoZoo3GMw/viewform?usp=header')">
+Sign Up</button>
+        </div>
+        <div class="card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+</svg><br>
+          <h3>For Individual<br> Customers</h3>
+           <p>  Perfect for urban residents and families 
+who want to save more on everyday 
+essentials.</p>
+          <ul>
+            <li>Access wholesale prices on produce, groceries, beauty, tourism, and lifestyle products</li>
+            <li>Join or create community group buys in your area</li>
+            <li>Track orders, deliveries, and savings in one place</li>
+            <li>Enjoy exclusive member offers and seasonal deals</li><br><br>
+          </ul>
+          <a class="shop-btn" href="#" onclick="openSignup()">Shop Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="account-image">
+      <img src="Images/image3.png.png" alt="Market Image">
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+<!-- How It Works Section -->
+<section class="how-it-works" id="how-it-works">
+  <div class="how-container">
+    <!-- Heading: "Using Group Buy Hive Is Easy" -->
+    <h2 class="how-title">Using Group Buy Hive Is Easy</h2>
+
+    <!-- Left Section: Phone Image -->
+    <div class="how-left">
+      <div class="phone-images">
+        <img src="Images/image4.png.png" alt="App Interface" class="phone phone-left">
+      </div>
+    </div>
+    <!-- Right Section: Steps -->
+    <div class="how-right">
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-text">
+            <h4>Join Your Urban Community</h4>
+            <p>Sign up and connect with your city's trusted buying groups.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-text">
+            <h4>Browse & Join Deals</h4>
+            <p>Pick deals on groceries, beauty, or lifestyle products curated for your community.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-text">
+            <h4>Fast, Secure Checkout</h4>
+            <p>Complete your purchase with ease, and enjoy quick delivery.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-text">
+            <h4>Save & Receive</h4>
+            <p>Get your individual order delivered right to your doorstep or neighborhood pickup point at wholesale rates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Why Group Buy Hive Section -->
+  <section class="why-hive" id="why-hive">
+    <h2>Why Group Buy Hive?</h2>
+    <div class="why-grid">
+      <div class="why-item">
+
+        <img src="Images/placeholder-icon1.png.png" alt="Community Power Icon">
+        <h4>Community Power</h4>
+        <p>Unlock savings through collective purchases.</p>
+      </div>
+      <div class="why-item">
+        <img src="Images/placeholder-icon2.png" alt="Diverse Selection Icon">
+        <h4>Diverse Selection</h4>
+        <p>From local farmers to international brands, all in one place.</p>
+      </div>
+      <div class="why-item">
+        <img src="Images/placeholder-icon3.png" alt="Personalized Support Icon">
+        <h4>Personalized Support</h4>
+        <p>We mentor vendors and tailor offers for your culture and needs.</p>
+      </div>
+      <div class="why-item">
+        <img src="Images/placeholder-icon4.png" alt="Trusted Network Icon">
+        <h4>Trusted Network</h4>
+        <p>Closed groups create trust, high repeat orders, and shared value.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+ 
+<!-- Customers Section -->
+<section class="customers" id="customers">
+  <div class="customers-wrapper">
+    <div class="customers-left">
+      <img src="Images/111111.png" alt="Happy Customers" ">
+    </div>
+    <div class="customers-right">
+      <h2>What Our <span class="highlight">Customers</span><br> Say About Us</h2>
+      <div class="testimonial-container">
+        <!-- Testimonial 1 -->
+        <div class="testimonial active">
+          <p>"Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna 
+dictum, bibendum cursus velit sodales. Donec sed 
+neque eget"</p>
+          <div class="customer-info">
+            <img src="Images/Imageplaceholder-users.png" alt="Customer">
+            <div>
+              <h4>Robert Fox</h4>
+              <p>Customer</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial">
+          <p>"Great service, I am extremely satisfied with the prices and the variety of items available. I’ll definitely be back next month for more shopping."</p>
+          <div class="customer-info">
+            <img src="Images/Imageplaceholder-users.png" alt="Customer">
+            <div>
+              <h4>John Doe</h4>
+              <p>Customer</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+          <p>"I’ve been able to save so much on groceries thanks to this service. The delivery was quick, and the quality was excellent!"</p>
+          <div class="customer-info">
+            <img src="Images/Imageplaceholder-users.png" alt="Customer">
+            <div>
+              <h4>Jane Smith</h4>
+              <p>Customer</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-nav">
+        <button class="prev">&lt;</button>
+        <button class="next">&gt;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Vendor Section -->
+<section class="vendor" id="vendor">
+  <h2>Want To Become Our Vendor?</h2>
+  <div class="vendor-content">
+    
+    <!-- Left: Text Section -->
+    <div class="vendor-box">
+      <div class="vendor-text">
+        
+        <p>
+          Join the Group Buy Hive network and grow your business by reaching thousands of urban customers through collective buying power.
+        </p>
+
+        <h3>As a Vendor you can</h3>
+        <ul>
+          <li>List your produce, groceries, beauty, tourism, and lifestyle products directly on our platform</li>
+          <li>Gain access to bulk community orders with guaranteed sales volumes</li>
+          <li>Build your own website & brand visibility in urban communities</li>
+          <li>Get fast, secure payments and transparent reporting</li>
+          <li>Expand your reach with Group Buy Hive’s personalized onboarding and marketing support</li>
+          <li>Connect directly with urban buyers eager for your products — no complex e-commerce setup required</li>
+        </ul>
+
+        <button
+          class="apply-btn"
+          onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe1u8hCayT44sy1mVTKVuUngJjZauQpRsvARLt5rbNG3iyUUw/viewform?usp=header')"
+        >
+          Apply Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Right: Image Section -->
+    <div class="vendor-image">
+      <img src="Images/image6.png" alt="Vendors">
+      
+    </div>
+
+  </div>
+</section>
+
+ 
+ <!-- Vendor Benefits Section -->
+<section class="vendor-benefits" >
+ <h2 id="vendor-benefits">What Our Vendors Get?</h2><br>
+ <a href="https://calendar.app.google/XHTG4JFheYZA5wYN9" target="_blank" class="btn-link">
+          <button class="benefits-button">Book A Demo</button>
+        </a>
+  <div class="benefits-content">
+    <div class="benefits-text">
+    
+      <div>
+       
+      </div>
+    </div>
+
+    <div class="benefits-images">
+      <img src="Images/image7.png" alt="Vendor Dashboard">
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Partners Section -->
+<section class="partners" id="partners">
+  <br><br><br>
+  <h2>Trusted and vetted by our Partners </h2>
+  <div class="partners-slider">
+    <div class="partners-track">
+      <!-- First set of 21 logos -->
+      <img src="Images/placeholder-logo1.jpg" alt="Partner 1">
+      <img src="Images/placeholder-logo2.jpg" alt="Partner 2">
+      <img src="Images/placeholder-logo3.jpg" alt="Partner 3">
+      <img src="Images/placeholder-logo4.jpg" alt="Partner 4">
+      <img src="Images/placeholder-logo5.jpg" alt="Partner 5">
+      <img src="Images/placeholder-logo6.jpg" alt="Partner 6">
+      <img src="Images/placeholder-logo7.jpg" alt="Partner 7">
+      <img src="Images/placeholder-logo8.jpg" alt="Partner 8">
+      <img src="Images/placeholder-logo9.jpg" alt="Partner 9">
+      <img src="Images/placeholder-logo10.jpg" alt="Partner 10">
+      <img src="Images/placeholder-logo11.jpg" alt="Partner 11">
+      <img src="Images/placeholder-logo12.jpg" alt="Partner 12">
+      <img src="Images/placeholder-logo13.jpg" alt="Partner 13">
+      <img src="Images/placeholder-logo14.jpg" alt="Partner 14">
+      <img src="Images/placeholder-logo15.jpg" alt="Partner 15">
+      <img src="Images/placeholder-logo16.jpg" alt="Partner 16">
+      <img src="Images/placeholder-logo17.jpg" alt="Partner 17">
+      <img src="Images/placeholder-logo18.jpg" alt="Partner 18">
+      <img src="Images/placeholder-logo19.jpg" alt="Partner 19">
+      <img src="Images/placeholder-logo20.jpg" alt="Partner 20">
+      <img src="Images/placeholder-logo21.jpg" alt="Partner 21">
+
+      <!-- Duplicate set for continuous scrolling -->
+      <img src="Images/placeholder-logo1.jpg" alt="Partner 1">
+      <img src="Images/placeholder-logo2.jpg" alt="Partner 2">
+      <img src="Images/placeholder-logo3.jpg" alt="Partner 3">
+      <img src="Images/placeholder-logo4.jpg" alt="Partner 4">
+      <img src="Images/placeholder-logo5.jpg" alt="Partner 5">
+      <img src="Images/placeholder-logo6.jpg" alt="Partner 6">
+      <img src="Images/placeholder-logo7.jpg" alt="Partner 7">
+      <img src="Images/placeholder-logo8.jpg" alt="Partner 8">
+      <img src="Images/placeholder-logo9.jpg" alt="Partner 9">
+      <img src="Images/placeholder-logo10.jpg" alt="Partner 10">
+      <img src="Images/placeholder-logo11.jpg" alt="Partner 11">
+      <img src="Images/placeholder-logo12.jpg" alt="Partner 12">
+      <img src="Images/placeholder-logo13.jpg" alt="Partner 13">
+      <img src="Images/placeholder-logo14.jpg" alt="Partner 14">
+      <img src="Images/placeholder-logo15.jpg" alt="Partner 15">
+      <img src="Images/placeholder-logo16.jpg" alt="Partner 16">
+      <img src="Images/placeholder-logo17.jpg" alt="Partner 17">
+      <img src="Images/placeholder-logo18.jpg" alt="Partner 18">
+      <img src="Images/placeholder-logo19.jpg" alt="Partner 19">
+      <img src="Images/placeholder-logo20.jpg" alt="Partner 20">
+      <img src="Images/placeholder-logo21.jpg" alt="Partner 21">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+<!-- Footer (moved OUTSIDE section) -->
+<footer class="footer" id="footer">
+  <!-- Newsletter -->
+  <div class="newsletter">
+    <div class="newsletter-content">
+      <div class="newsletter-text">
+        <h3>Subcribe our Newsletter</h3>
+        <p>
+          GroupBuyHive brings people together to unlock big savings through collective buying. Join group deals, access premium products at lower prices, and shop smarter as a community
+        </p>
+      </div>
+      <form>
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer Main Content -->
+  <div class="footer-inner">
+    <!-- Logo and Social in One Line -->
+    <div class="footer-logo-social">
+      <img src="Images/22222.png" alt="Groupbuyhive Logo" class="footer-logo-img">
+      <div class="footer-social">
+        <a href="https://www.instagram.com/groupbuyhive/?hl=en" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg></a>
+        <a href="https://www.facebook.com/groupbuyhive/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg></a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg></a>
+        <a href="https://www.linkedin.com/company/groupbuyhive/?originalSubdomain=ca" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+</svg></a>
+      </div>
+    </div>
+
+    <!-- Policies -->
+    <div class="footer-policies">
+      <h4>Policies</h4>
+      <a href="#">Term of Service</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Refund Policy</a>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email:<br>Support@groupbuyhive.com</p>
+      <p>Phone:<br>+1 647 684 4584</p>
+    </div>
+  </div>
+
+  <!-- Bottom Strip -->
+  <div class="footer-bottom">
+    <div class="footer-payments">
+      <img src="Images/amex.png" alt="Amex">
+      <img src="Images/apple.png" alt="Apple Pay">
+      <img src="Images/gpay.png" alt="Google Pay">
+      <img src="Images/mastercard.png" alt="MasterCard">
+      <img src="Images/visa.png" alt="Visa">
+    </div>
+    <p>
+      Groupbuyhive® and Foodweysweet™ are legal subsidiaries of Cool Hive Purchase Inc. 2025.
+      All Rights Reserved.
+    </p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+<!-- Signup Popup -->
+
+
+
+<!-- Signup Popup -->
+<div id="signupPopup" class="popup-overlay">
+    <div class="popup-box">
+
+        <span class="close-btn" onclick="closeSignup()">&times;</span>
+
+        <h2 class="popup-title">Join GroupBuyHive</h2>
+        <p class="popup-sub">Signup to continue your shopping</p>
+
+        <form id="signupForm" class="form-area">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+
+            <input type="text" id="zip" placeholder="Type your Postal Code" autocomplete="off" required>
+            <div id="zipSuggestions" class="suggestions"></div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <div id="successBox" class="success-box hidden">
+            <div class="checkmark">✔</div>
+            <h3>Signup Successful!</h3>
+            <p>You will be contacted by our team shortly.</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+<script>
+// Full Canadian postal codes dataset )
+
+  const postalCodes = [
+  {code:"M5V 1A1", area:"Toronto"}, {code:"M5V 2B3", area:"Toronto"},
+  {code:"M4B 1B3", area:"Toronto"}, {code:"M4C 1A9", area:"Toronto"},
+  {code:"M6H 3Y8", area:"Toronto"}, {code:"M6K 2Y2", area:"Toronto"},
+  {code:"M1B 2K4", area:"Scarborough"}, {code:"M1C 3L6", area:"Scarborough"},
+  {code:"M1P 4T6", area:"Scarborough"}, {code:"M1R 2Z3", area:"Scarborough"},
+  {code:"L4B 1C4", area:"Richmond Hill"}, {code:"L4S 1P4", area:"Richmond Hill"},
+  {code:"L3R 4M9", area:"Markham"}, {code:"L3P 3J3", area:"Markham"},
+  {code:"L5B 2C9", area:"Mississauga"}, {code:"L5M 4Z5", area:"Mississauga"},
+  {code:"L6Y 2X5", area:"Brampton"}, {code:"L6T 1R2", area:"Brampton"},
+  {code:"N2G 4Y5", area:"Kitchener"}, {code:"N2M 5E1", area:"Kitchener"},
+  {code:"N1H 6J2", area:"Guelph"}, {code:"N1G 3M6", area:"Guelph"},
+  {code:"K1A 0B1", area:"Ottawa"}, {code:"K1S 3V7", area:"Ottawa"},
+  {code:"K2P 2L8", area:"Ottawa"}, {code:"K2C 3R9", area:"Ottawa"},
+  {code:"H3Z 2Y7", area:"Montreal"}, {code:"H2X 1C3", area:"Montreal"},
+  {code:"H4A 2J3", area:"Montreal"}, {code:"H1A 1A1", area:"Montreal"},
+  {code:"H7T 1E9", area:"Laval"}, {code:"H7W 3Z8", area:"Laval"},
+  {code:"H9R 5N2", area:"Pointe-Claire"}, {code:"H8Y 2T3", area:"Pierrefonds"},
+  {code:"V5K 0A1", area:"Vancouver"}, {code:"V5N 3J6", area:"Vancouver"},
+  {code:"V6B 1A1", area:"Vancouver"}, {code:"V6E 2E1", area:"Vancouver"},
+  {code:"V6P 4Y2", area:"Vancouver"}, {code:"V3T 2W1", area:"Surrey"},
+  {code:"V3S 7Y4", area:"Surrey"}, {code:"V7Y 1K8", area:"Richmond"},
+  {code:"V7A 2E1", area:"Richmond"}, {code:"V8P 2C4", area:"Victoria"},
+  {code:"T2P 1J9", area:"Calgary"}, {code:"T3K 2H2", area:"Calgary"},
+  {code:"T2X 3B5", area:"Calgary"}, {code:"T2Y 2P7", area:"Calgary"},
+  {code:"T6E 3X2", area:"Edmonton"}, {code:"T5J 3N5", area:"Edmonton"},
+  {code:"T5H 2G2", area:"Edmonton"}, {code:"T6N 1H2", area:"Edmonton"},
+  {code:"R3C 4T3", area:"Winnipeg"}, {code:"R2G 1E7", area:"Winnipeg"},
+  {code:"R3M 2B3", area:"Winnipeg"}, {code:"R3Y 1S4", area:"Winnipeg"},
+  {code:"S7K 1M8", area:"Saskatoon"}, {code:"S7N 2X8", area:"Saskatoon"},
+  {code:"S4P 2Z1", area:"Regina"}, {code:"S4X 1C3", area:"Regina"},
+  {code:"B3J 3K9", area:"Halifax"}, {code:"B3L 4T8", area:"Halifax"},
+  {code:"B2N 3H7", area:"Truro"}, {code:"B1S 2W1", area:"Sydney"},
+  {code:"A1A 1A1", area:"St. John’s"}, {code:"A1E 3V9", area:"St. John’s"},
+  {code:"C1A 2B1", area:"Charlottetown"}, {code:"C1E 2C3", area:"Charlottetown"},
+  {code:"E2L 2C3", area:"Saint John"}, {code:"E1A 5K6", area:"Moncton"},
+  {code:"G1R 2K5", area:"Quebec City"}, {code:"G1S 3H3", area:"Quebec City"},
+  {code:"G2K 1L7", area:"Quebec City"}, {code:"G3J 1N3", area:"Quebec City"},
+  {code:"J8T 8A2", area:"Gatineau"}, {code:"J9J 2J5", area:"Gatineau"},
+  {code:"J7Y 1C6", area:"Saint-Jérôme"}, {code:"J7G 2L8", area:"Boisbriand"}
+
+
+];
+
+// Open / Close popup
+function openSignup() { document.getElementById("signupPopup").style.display="flex"; }
+function closeSignup() { document.getElementById("signupPopup").style.display="none"; }
+
+// Autocomplete logic
+const zipInput = document.getElementById("zip");
+const suggestionsDiv = document.getElementById("zipSuggestions");
+
+zipInput.addEventListener("input", function(){
+    const val = this.value.toUpperCase();
+    suggestionsDiv.innerHTML = "";
+    if(val.length > 0){
+        const matches = postalCodes.filter(p => p.code.startsWith(val) || p.area.toUpperCase().includes(val));
+        matches.slice(0,10).forEach(p=>{
+            const div = document.createElement("div");
+            div.textContent = `${p.code} – ${p.area}`;
+            div.addEventListener("click", ()=> {
+                zipInput.value = p.code;
+                suggestionsDiv.innerHTML = "";
+            });
+            suggestionsDiv.appendChild(div);
+        });
+    }
+});
+
+// Signup form submit
+document.getElementById("signupForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.querySelector(".form-area").classList.add("hidden");
+    document.getElementById("successBox").classList.remove("hidden");
+
+    setTimeout(()=> { window.open("https://www.farm2flat.com/", "_blank"); }, 2500);
+});
+</script>
+
+
+
+</html>
